@@ -20,7 +20,7 @@ public class Exam04Controller {
 
 	@RequestMapping("")
 	public String index(Model model) {
-		return "exam04";
+		return "exam04/exam04";
 	}
 
 	@RequestMapping("register")
@@ -34,6 +34,6 @@ public class Exam04Controller {
 		redirectAttributes.addFlashAttribute("age", form.getAge());
 		redirectAttributes.addFlashAttribute("comment", form.getComment());
 
-		return "exam04-result";
+		return "exam04/exam04-result";
 	}
 }
